@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SyahrilxXx — Portfolio</title>
+  <meta name="description" content="Portfolio profesional dengan desain mewah dan modern.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="syahril.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">SyahrilxXx</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero reveal">
+      <div class="hero-text">
+        <h1>Halo, Saya <br><span class="highlight">SyahrilxXx</span></h1>
+        <p>I am a website developer and designer as well as a developer, I focus on modern design, user experience and high performance. I build websites with premium quality</p>
+        <button class="btn primary">Hubungi Saya</button>
+        <button class="btn ghost">Lihat Projek</button>
+      </div>
+      <div class="card profile">
+        <img src="https://sdmntpraustraliaeast.oaiusercontent.com/files/00000000-854c-61fa-8032-5f1239f9971c/raw?se=2025-08-26T14%3A52%3A39Z&sp=r&sv=2024-08-04&sr=b&scid=93571352-abbc-53f7-834b-437ef46a58e9&skoid=c953efd6-2ae8-41b4-a6d6-34b1475ac07c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-26T14%3A22%3A48Z&ske=2025-08-27T14%3A22%3A48Z&sks=b&skv=2024-08-04&sig=DyMZcmI%2B9csistXz3DMeHSMFqMkpgfNHifU2pzE/Vp4%3D" alt="Profile">
+        <h3>SyahrilxXx</h3>
+        <p class="muted">Frontend Developer • UI/UX Designer</p>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>I have experience building various websites with modern technology. Focusing on luxurious aesthetics and optimal functionality, I always deliver results with high standards and neat details.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <h2>Latest Project</h2>
+      <div class="projects-grid">
+        <div class="card project">
+          <h3>Luxury Landing Page</h3>
+          <p>Elegant landing page for a premium brand with interactive animations.</p>
+        </div>
+        <div class="card project">
+          <h3>Dashboard Analytics</h3>
+          <p>Sophisticated dashboard for real-time data analysis with modern visualizations.</p>
+        </div>
+        <div class="card project">
+          <h3>E-commerce Modern</h3>
+          <p>An online shopping platform with a super luxurious design and an intuitive UI..</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="reveal">
+      <h2>Skill</h2>
+      <div class="skills">
+        <span class="skill">HTML & CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">React / Next.js</span>
+        <span class="skill">UI/UX</span>
+        <span class="skill">Responsive Design</span>
+        <span class="skill">Performance Optimization</span>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2>Kontak</h2>
+      <div class="card" style="text-align:center;">
+        <p>Want to collaborate or have a project idea? Contact me via Telegram: <b class="highlight">@SyahrilxXx</b></p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> SyahrilxXx Project
+    </footer>
+  </div>
+
+  <!-- Animasi Scroll -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const reveals = document.querySelectorAll(".reveal");
+
+      function revealOnScroll() {
+        for (let i = 0; i < reveals.length; i++) {
+          let windowHeight = window.innerHeight;
+          let elementTop = reveals[i].getBoundingClientRect().top;
+          let elementVisible = 100;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", revealOnScroll);
+      revealOnScroll(); // panggil pertama kali
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>
