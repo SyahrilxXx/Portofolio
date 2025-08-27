@@ -1,110 +1,200 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SyahrilxXx — Portfolio</title>
-  <meta name="description" content="Portfolio profesional dengan desain mewah dan modern.">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <meta name="description" content="Portofolio SyahrilxXx.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <meta name="color-scheme" content="dark light">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo">SyahrilxXx</div>
-      <nav>
+  <!-- Decorative background with parallax -->
+  <div aria-hidden="true" class="bg-layers">
+    <span class="glow glow-1"></span>
+    <span class="glow glow-2"></span>
+    <span class="grain"></span>
+  </div>
+
+  <header class="nav">
+    <div class="nav-inner container">
+      <a class="logo" href="#top" aria-label="Homepage">Syahril<span>xXx</span></a>
+      <button class="theme-toggle" aria-label="Toggle theme">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+      </button>
+      <button class="hamburger" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="menu" role="navigation">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <section class="hero reveal">
-      <div class="hero-text">
-        <h1>Halo, Saya <br><span class="highlight">SyahrilxXx</span></h1>
-        <p>I am a website developer and designer as well as a developer, I focus on modern design, user experience and high performance. I build websites with premium quality</p>
-        <button class="btn primary">Hubungi Saya</button>
-        <button class="btn ghost">Lihat Projek</button>
+  <main id="top">
+    <section class="hero section container reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">Frontend Developer • UI/UX Designer</p>
+        <h1>Create <span class="gold">premium websites</span> with high performance & refined details.</h1>
+        <p class="lede">
+          I’m SyahrilxXx. I craft modern, elegant digital experiences with seamless usability, 
+          luxury aesthetics, and premium quality.
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#contact">Hire Me</a>
+          <a class="btn btn-ghost" href="#projects">View Projects</a>
+        </div>
+        <ul class="meta">
+          <li>Responsive & accessible</li>
+          <li>Luxury design</li>
+          <li>Performance optimized</li>
+        </ul>
       </div>
-      <div class="card profile">
-        <img src="https://h.uguu.se/bqSMrBzE.jpg" alt="Profile">
+
+      <aside class="profile card">
+        <img src="profile.jpg" alt="Profile">
         <h3>SyahrilxXx</h3>
-        <p class="muted">Frontend Developer • UI/UX Designer</p>
+        <p class="muted">Available for freelance & collaborations</p>
+        <div class="socials">
+          <a href="https://t.me/SyahrilxXx" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+              <path fill="currentColor" d="M9.04 15.314l-.376 5.3c.536 0 .769-.23 1.048-.505l2.516-2.41 5.213 3.82c.957.528 1.642.25 1.904-.885l3.45-16.136.002-.002c.307-1.433-.518-1.989-1.45-1.64L1.71 9.845c-1.4.545-1.379 1.327-.237 1.677l5.51 1.72L19.1 6.25c.57-.372 1.087-.166.66.206"/>
+            </svg>
+          </a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="section container reveal">
+      <header class="section-head">
+        <h2>About Me</h2>
+        <p>I build modern websites from small to mid-scale projects. My focus: precision, elegant typography, and smooth transitions without sacrificing performance.</p>
+      </header>
+      <div class="features">
+        <div class="feature card">
+          <h3>Premium Quality</h3>
+          <p>Luxury touch: elegant palettes, glassmorphism, and refined micro-interactions.</p>
+        </div>
+        <div class="feature card">
+          <h3>Best Practices</h3>
+          <p>Clean code, accessibility first, SEO friendly, and optimized performance.</p>
+        </div>
+        <div class="feature card">
+          <h3>Hand-crafted</h3>
+          <p>Tailor-made designs built specifically for your brand — not just a template.</p>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="reveal">
-      <h2>About Me</h2>
-      <div class="card">
-        <p>I have experience building various websites with modern technology. Focusing on luxurious aesthetics and optimal functionality, I always deliver results with high standards and neat details.</p>
-      </div>
-    </section>
+    <section id="projects" class="section container reveal">
+      <header class="section-head">
+        <h2>Latest Projects</h2>
+        <p>Showcasing my works with luxury visuals and blazing-fast performance.</p>
+      </header>
 
-    <section id="projects" class="reveal">
-      <h2>Latest Project</h2>
       <div class="projects-grid">
-        <div class="card project">
-          <h3>Luxury Landing Page</h3>
-          <p>Elegant landing page for a premium brand with interactive animations.</p>
-        </div>
-        <div class="card project">
-          <h3>Dashboard Analytics</h3>
-          <p>Sophisticated dashboard for real-time data analysis with modern visualizations.</p>
-        </div>
-        <div class="card project">
-          <h3>E-commerce Modern</h3>
-          <p>An online shopping platform with a super luxurious design and an intuitive UI..</p>
-        </div>
+        <article class="project card">
+          <div class="project-tag">Landing Page</div>
+          <h3>Luxury Brand Experience</h3>
+          <p>Elegant landing with bold typography & smooth interactive animations.</p>
+        </article>
+
+        <article class="project card">
+          <div class="project-tag">Dashboard</div>
+          <h3>Executive Analytics</h3>
+          <p>Realtime dashboard with modern visualization and premium readability.</p>
+        </article>
+
+        <article class="project card">
+          <div class="project-tag">E-Commerce</div>
+          <h3>Boutique Storefront</h3>
+          <p>Luxury boutique style with seamless, fast shopping experience.</p>
+        </article>
       </div>
     </section>
 
-    <section id="skills" class="reveal">
-      <h2>Skill</h2>
+    <section id="skills" class="section container reveal">
+      <header class="section-head">
+        <h2>Skills</h2>
+        <p>The tools I use to turn ideas into digital luxury experiences.</p>
+      </header>
+
       <div class="skills">
-        <span class="skill">HTML & CSS</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">React / Next.js</span>
-        <span class="skill">UI/UX</span>
-        <span class="skill">Responsive Design</span>
-        <span class="skill">Performance Optimization</span>
+        <span class="chip">HTML & CSS</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">React / Next.js</span>
+        <span class="chip">UI/UX Design</span>
+        <span class="chip">Responsive Design</span>
+        <span class="chip">Performance Optimization</span>
       </div>
     </section>
 
-    <section id="contact" class="reveal">
-      <h2>Kontak</h2>
-      <div class="card" style="text-align:center;">
-        <p>Want to collaborate or have a project idea? Contact me via Telegram: <b class="highlight">@SyahrilxXx</b></p>
+    <section id="contact" class="section container reveal">
+      <header class="section-head">
+        <h2>Contact</h2>
+        <p>Have a project idea or collaboration in mind? Let’s connect and create something amazing.</p>
+      </header>
+
+      <div class="contact card">
+        <a class="btn btn-primary" href="https://t.me/SyahrilxXx" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn btn-ghost" href="Gmail: Syahrilxxtzy@gmail.com">Gmail</a>
       </div>
     </section>
+  </main>
 
-    <footer>
-      © <span id="year"></span> SyahrilxXx Project
-    </footer>
-  </div>
+  <footer class="footer">
+    <div class="container">
+      <span>© <span id="year"></span> SyahrilxXx Project</span>
+      <div class="divider"></div>
+    </div>
+  </footer>
 
-  <!-- Animasi Scroll -->
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const reveals = document.querySelectorAll(".reveal");
+    // Reveal on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('active');
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-      function revealOnScroll() {
-        for (let i = 0; i < reveals.length; i++) {
-          let windowHeight = window.innerHeight;
-          let elementTop = reveals[i].getBoundingClientRect().top;
-          let elementVisible = 100;
+    // Mobile menu
+    const hamburger = document.querySelector('.hamburger');
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!expanded));
+      document.body.classList.toggle('nav-open');
+    });
 
-          if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
-          } else {
-            reveals[i].classList.remove("active");
-          }
-        }
-      }
+    // Dark/Light theme
+    const themeBtn = document.querySelector('.theme-toggle');
+    themeBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-theme');
+    });
 
-      window.addEventListener("scroll", revealOnScroll);
-      revealOnScroll(); // panggil pertama kali
-      document.getElementById("year").textContent = new Date().getFullYear();
+    // Year auto
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Parallax background glow
+    const glow1 = document.querySelector('.glow-1');
+    const glow2 = document.querySelector('.glow-2');
+    document.addEventListener('mousemove', e => {
+      let x = (e.clientX / window.innerWidth - 0.5) * 30;
+      let y = (e.clientY / window.innerHeight - 0.5) * 30;
+      glow1.style.transform = `translate(${x}px, ${y}px)`;
+      glow2.style.transform = `translate(${-x}px, ${-y}px)`;
+    });
+    window.addEventListener('scroll', () => {
+      let scrolled = window.scrollY * 0.1;
+      glow1.style.transform += ` translateY(${scrolled}px)`;
+      glow2.style.transform += ` translateY(${-scrolled}px)`;
     });
   </script>
 </body>
